@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NULL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Example-Universe-style.css">
+    <script src="../howler.js"></script>
+    <script src="../main.js"></script>
+</head>
+<body>
+    <style>
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('../BG/nullbg.jpg');
+            background-size: 100% 100%;
+        }
+    </style>
+    <div class="background"></div>
+    <div class="box" style="top:100px;">
+        <hr>
+        <h1>Just relax</h1>
+        <p>Fall into the endless void...</p>
+        <hr>
+        <h1>Void says:</h1>
+        <p>Enter text below</p>
+        <hr>
+        <a onclick="goto('../index.html')" target="_blank">Escape from the null</a>
+        <hr>
+    </div>
+    <script>
+        let ae = AudioPlay('../MainMusic/snowfall.m4a',true,1,1);
+    </script>
+</body>
+</html>

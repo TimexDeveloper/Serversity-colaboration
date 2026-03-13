@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The one forgotten place.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Example-Universe-style.css">
+    <script src="../howler.js"></script>
+    <script src="../main.js"></script>
+</head>
+<body>
+    <style>
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('../BG/SoFamiliar.jpg');
+            background-size: 100% 100%;
+        }
+    </style>
+    <div class="background"></div>
+    <div class="box" style="top:100px;">
+        <hr>
+        <h1>I miss this place now..</h1>
+        <p>After he disappeared, people started disappearing from the team, and we're all stuck. But this is the page where we walked and played snowballs (and bricks).</p>
+        <hr>
+    </div>
+
+    <div class="box" style="top:300px;">
+        <hr>
+        <a onclick="goto('lastwish.html')" target="_blank">My last wish</a>
+        <b><p style="color:red;"definition="There is no escape...">Escape</p></b>
+        <hr>
+    </div>
+    <script>
+        let ae = AudioPlay('../MainMusic/WinterMist.m4a',true,1,1);
+    </script>
+</body>
+</html>

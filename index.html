@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Более-менее важные компоненты -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Название страницы -->
     <title>Timex's Server</title>
-    <!-- Подключение стилей -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Example-Universe-style.css">
-    <!-- Подключение скриптов -->
     <script src="howler.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
     <style>
-        /* .background это айди в котором ширина и высота 100%, в бэкграунде url для ссылки на картину. position: absolute(или fixed); нужен чтобы картинка показалась а то relative говно.
-        background-size устанавливает размер бэкграунда в 100% на x и y, чтобы картинка не повторялась. */
         .background {
             position: fixed;
             width: 100%;
@@ -25,9 +19,7 @@
             background-size: 100% 100%;
         }
     </style>
-    <!-- Фон -->
     <div class="background"></div>
-    <!-- Окно текста с опущением вниз на 100 пикселей -->
     <div class="box" style="top:100px;">
         <hr>
         <h1>Timex's Server</h1>
@@ -37,24 +29,28 @@
         <p>There was a lone developer who created a team of developers to create all sorts of cool stuff. But he disappeared from the network and hasn't been seen for over two years. The development team appointed a new manager and began creating a new server, which spiraled out of control.</p>
         <hr>
         <h1>Links</h1>
-        <a onclick="goto('Lost.html')" target="_blank">Discord</a>
+        <a onclick="goto('Pages/Lost.html')" target="_blank">Discord</a>
         <br>
-        <a onclick="goto('null.html')" target="_blank">null</a>
+        <a onclick="goto('Pages/null.html')" target="_blank">null</a>
         <hr>
     </div>
 
     <div class="box" style="top:300px">
     <h1>console.backup("deleted.html")</h1>
-    <a onclick="goto('deleted.html')" target="_blank">PLEASE IF YOU SEE THIS DONT CLICK ON IT REPORT IT TO DISCORD SERVER</a>
+    <a onclick="goto('Pages/deleted.html')" target="_blank">PLEASE IF YOU SEE THIS DONT CLICK ON IT REPORT IT TO DISCORD SERVER</a>
     </div>
 
-    <div class="box" style="top:400px">
-      <p>ae</p>
+    <div class="box" style="top:600px">
+    <hr>
+    <h1>Sectors</h1>
+    <hr>
+    <h2>About Sectors</h2>
+    <p>The sectors in this place are called the developers who ended up here.</p>
+    <hr>
+    <a onclick="goto('Pages/S1F0X.html')" target="_blank">S1F0X</a>
     </div>
-    <!-- Это скрипт на проигрывание звука - музыки (ссылка, повтор, громкость, скорость) -->
     <script>
         let ae = AudioPlay('MainMusic/waterfall.m4a',true,1,1);
     </script>
-    <!-- ВАЖНО чтобы ты запустил через live-server, а то звук не будет проигрываться автоматически -->
 </body>
 </html>

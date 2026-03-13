@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOST MEMORIES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Example-Universe-style.css">
+    <script src="../howler.js"></script>
+    <script src="../main.js"></script>
+</head>
+<body>
+    <style>
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('../BG/WhoAreThey.png');
+            background-size: 100% 100%;
+        }
+    </style>
+    <div class="background"></div>
+    <div class="box" style="top:100px;">
+        <hr>
+        <h1>Our #########</h1>
+        <p>I cant recall any member, what happend to me?</p>
+        <a onclick="goto('../index.html')" target="_blank">Get back?</a>
+        <hr>
+    </div>
+    <script>
+        let ae = AudioPlay('../MainMusic/LostPage.m4a',true,1,1);
+    </script>
+</body>
+</html>
