@@ -82,7 +82,18 @@
     <p>26.05.19 We fell into void.. We got catched by VOIDER and we all now dead..</p>
     </div>
     <script>
-        let ae = AudioPlay('../Audio/waterfall.m4a',true,1,1);
+        // Функция, которая запустит звук водопада
+        function initWaterfallAudio() {
+            // Запускаем воспроизведение
+            let ae = AudioPlay('../Audio/waterfall.m4a', true, 1, 1);
+            
+            // Удаляем слежку за кликом, чтобы музыка не перезапускалась при каждом нажатии
+            document.removeEventListener('click', initWaterfallAudio);
+        }
+
+        // Ждем, пока пользователь кликнет в любом месте экрана, и запускаем звук
+        document.addEventListener('click', initWaterfallAudio);
     </script>
+
 </body>
 </html>
